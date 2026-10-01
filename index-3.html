@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="VISIONX AGENCY GROUP — Digital, AI and automation solutions for modern businesses.">
+  <title>VISIONX AGENCY GROUP | Digital & AI Solutions</title>
+  <style>
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{
+      font-family:Arial,Helvetica,sans-serif;
+      background:#05070b;color:#f5f7fb;line-height:1.6;
+    }
+    a{text-decoration:none;color:inherit}
+    .container{width:min(1100px,92%);margin:auto}
+    header{
+      position:sticky;top:0;z-index:20;
+      background:rgba(5,7,11,.88);backdrop-filter:blur(14px);
+      border-bottom:1px solid #18202c;
+    }
+    nav{height:70px;display:flex;align-items:center;justify-content:space-between}
+    .logo{font-size:22px;font-weight:900;letter-spacing:2px}
+    .logo span{color:#25a7ff}
+    .navlinks{display:flex;gap:25px;font-size:14px;color:#b9c2d0}
+    .navlinks a:hover{color:#25a7ff}
+    .hero{min-height:88vh;display:flex;align-items:center;text-align:center;position:relative;overflow:hidden}
+    .glow{
+      position:absolute;width:380px;height:380px;border-radius:50%;
+      background:#0878ff;filter:blur(130px);opacity:.18;left:50%;top:42%;
+      transform:translate(-50%,-50%);
+    }
+    .hero-content{position:relative;z-index:1;width:100%}
+    .badge{
+      display:inline-block;border:1px solid #24425e;border-radius:50px;
+      padding:7px 15px;color:#73c7ff;font-size:12px;letter-spacing:1px;
+      margin-bottom:20px;background:#0a111a;
+    }
+    h1{font-size:clamp(42px,9vw,88px);line-height:.98;letter-spacing:-3px}
+    h1 span{color:#25a7ff}
+    .hero p{max-width:680px;margin:25px auto;color:#aeb8c7;font-size:17px}
+    .buttons{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:25px}
+    .btn{padding:13px 22px;border-radius:9px;font-weight:700;border:1px solid #263547}
+    .primary{background:#168cff;color:white;border-color:#168cff}
+    .secondary{background:#0b1017;color:#dce5ef}
+    section{padding:85px 0}
+    .section-title{text-align:center;margin-bottom:45px}
+    .section-title small{color:#35adff;letter-spacing:2px;font-weight:700}
+    .section-title h2{font-size:38px;margin-top:8px}
+    .section-title p{color:#9da8b8;margin-top:10px}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .card{
+      background:#0a0f16;border:1px solid #1a2634;border-radius:16px;
+      padding:26px;transition:.25s;
+    }
+    .card:hover{transform:translateY(-5px);border-color:#168cff}
+    .icon{font-size:27px;margin-bottom:14px}
+    .card h3{margin-bottom:8px}
+    .card p{color:#9da8b8;font-size:14px}
+    .about{
+      display:grid;grid-template-columns:1fr 1fr;gap:45px;align-items:center
+    }
+    .about h2{font-size:42px;line-height:1.1;margin:10px 0 18px}
+    .about p{color:#aab4c3}
+    .points{margin-top:20px;display:grid;gap:10px;color:#dbe3ec}
+    .points div::before{content:"✓";color:#28a9ff;font-weight:bold;margin-right:10px}
+    .cta{
+      border:1px solid #1e405c;border-radius:22px;padding:50px 25px;
+      text-align:center;background:linear-gradient(135deg,#09111b,#07101a);
+    }
+    .cta h2{font-size:38px;margin-bottom:12px}
+    .cta p{color:#aab4c3;margin-bottom:25px}
+    footer{border-top:1px solid #18202c;padding:28px 0;color:#8e99a8;font-size:13px}
+    .contact{display:flex;justify-content:center;gap:15px;flex-wrap:wrap;margin-top:18px}
+    .contact a{color:#72c7ff}
+    @media(max-width:750px){
+      .navlinks{display:none}
+      .grid{grid-template-columns:1fr}
+      .about{grid-template-columns:1fr}
+      section{padding:65px 0}
+      .about h2{font-size:34px}
+      .cta h2{font-size:30px}
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <nav>
+      <a class="logo" href="#home">VISION<span>X</span></a>
+      <div class="navlinks">
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main id="home">
+  <section class="hero">
+    <div class="glow"></div>
+    <div class="container hero-content">
+      <div class="badge">VISIONX AGENCY GROUP</div>
+      <h1>YOUR VISION.<br><span>OUR PRIORITY.</span></h1>
+      <p>
+        Digital, AI and automation solutions designed to help modern businesses
+        build their online presence, save time and grow smarter.
+      </p>
+      <div class="buttons">
+        <a class="btn primary" href="#services">Explore Services</a>
+        <a class="btn secondary" href="#contact">Contact VISIONX</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="container">
+      <div class="section-title">
+        <small>WHAT WE DO</small>
+        <h2>Our Services</h2>
+        <p>Practical digital solutions for businesses and creators.</p>
+      </div>
+
+      <div class="grid">
+        <div class="card"><div class="icon">🌐</div><h3>Website Development</h3><p>Modern, responsive websites for shops, startups, creators and businesses.</p></div>
+        <div class="card"><div class="icon">📱</div><h3>App Development</h3><p>Useful mobile and web applications built around your business needs.</p></div>
+        <div class="card"><div class="icon">🤖</div><h3>AI Solutions</h3><p>AI-powered content, workflows and tools to make everyday work more efficient.</p></div>
+        <div class="card"><div class="icon">💬</div><h3>WhatsApp Automation</h3><p>Customer communication and lead workflows designed to reduce repetitive work.</p></div>
+        <div class="card"><div class="icon">📍</div><h3>Google Maps Setup</h3><p>Help with setting up a business presence on Google Maps with the required documents.</p></div>
+        <div class="card"><div class="icon">📣</div><h3>Digital Marketing</h3><p>Social media creatives, promotional content and digital presence support.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="container about">
+      <div>
+        <small style="color:#35adff;letter-spacing:2px;font-weight:700">ABOUT VISIONX</small>
+        <h2>Building the digital future, one business at a time.</h2>
+        <p>
+          VISIONX AGENCY GROUP is a growing digital agency focused on websites,
+          apps, AI, automation and online business solutions.
+        </p>
+        <div class="points">
+          <div>Business-focused digital solutions</div>
+          <div>Modern and responsive designs</div>
+          <div>AI and automation ready</div>
+          <div>Support for local and online businesses</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>VISIONX AGENCY GROUP</h3>
+        <p style="margin-top:12px">
+          We believe technology should be simple, useful and accessible.
+          Our goal is to help businesses move from traditional workflows
+          toward a stronger digital presence.
+        </p>
+        <div class="contact">
+          <a href="mailto:muztotager@gmail.com">Email</a>
+          <a href="https://www.instagram.com/visionx_agecy?stkn=MWU2OXBncnd5aXd6bA%3D%3D" target="_blank">Instagram</a>
+          <a href="https://wa.me/918746928471" target="_blank">WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <div class="cta">
+        <h2>Let's build something.</h2>
+        <p>Have a business idea, website or automation project? Connect with VISIONX.</p>
+        <div class="buttons">
+          <a class="btn primary" href="mailto:muztotager@gmail.com">Email Us</a>
+          <a class="btn secondary" href="https://www.instagram.com/visionx_agecy?stkn=MWU2OXBncnd5aXd6bA%3D%3D" target="_blank">Instagram</a>
+          <a class="btn secondary" href="https://wa.me/918746928471" target="_blank">WhatsApp: 8746928471</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container" style="display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap">
+    <span>© 2026 VISIONX AGENCY GROUP. All rights reserved.</span>
+    <span>Digital • AI • Automation</span>
+  </div>
+</footer>
+
+</body>
+</html>
